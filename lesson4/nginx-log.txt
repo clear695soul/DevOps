@@ -1,0 +1,7 @@
+Script started on 2024-09-30 12:17:25-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="177" LINES="35"]
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m sudo systemctl[Kl enable mys[K_service.service 
+[?2004lCreated symlink /etc/systemd/system/multi-user.target.wants/my_service.service → /lib/systemd/system/my_service.service.
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m exit
+[?2004lexit
+
+Script done on 2024-09-30 12:17:58-04:00 [COMMAND_EXIT_CODE="0"]

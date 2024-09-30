@@ -1,0 +1,113 @@
+Script started on 2024-09-28 14:01:54-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="225" LINES="66"]
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m ps -ef
+[?2004lUID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Sep26 ?        00:00:22 /sbin/init
+root         2     0  0 Sep26 ?        00:00:00 [kthreadd]
+root         3     2  0 Sep26 ?        00:00:00 [pool_workqueue_release]
+root         4     2  0 Sep26 ?        00:00:00 [kworker/R-slub_]
+root         5     2  0 Sep26 ?        00:00:00 [kworker/R-netns]
+root         7     2  0 Sep26 ?        00:00:00 [kworker/0:0H-kblockd]
+root         9     2  0 Sep26 ?        00:00:00 [kworker/R-mm_pe]
+root        10     2  0 Sep26 ?        00:00:00 [rcu_tasks_rude_kthread]
+root        11     2  0 Sep26 ?        00:00:00 [rcu_tasks_trace_kthread]
+root        12     2  0 Sep26 ?        00:00:09 [ksoftirqd/0]
+root        13     2  0 Sep26 ?        00:00:00 [kdevtmpfs]
+root        14     2  0 Sep26 ?        00:00:00 [kworker/R-inet_]
+root        15     2  0 Sep26 ?        00:00:05 [kworker/u2:1-ext4-rsv-conversion]
+root        16     2  0 Sep26 ?        00:00:00 [kauditd]
+root        17     2  0 Sep26 ?        00:00:00 [khungtaskd]
+root        18     2  0 Sep26 ?        00:00:00 [oom_reaper]
+root        19     2  0 Sep26 ?        00:00:00 [kworker/R-write]
+root        20     2  0 Sep26 ?        00:00:15 [kcompactd0]
+root        21     2  0 Sep26 ?        00:00:00 [kworker/R-kinte]
+root        22     2  0 Sep26 ?        00:00:00 [kworker/R-kbloc]
+root        23     2  0 Sep26 ?        00:00:00 [kworker/R-blkcg]
+root        24     2  0 Sep26 ?        00:00:00 [watchdogd]
+root        27     2  0 Sep26 ?        00:00:00 [kworker/R-rpcio]
+root        28     2  0 Sep26 ?        00:00:00 [kworker/R-xprti]
+root        31     2  0 Sep26 ?        00:00:00 [kswapd0]
+root        32     2  0 Sep26 ?        00:00:00 [kworker/R-nfsio]
+root        33     2  0 Sep26 ?        00:00:00 [hwrng]
+root        34     2  0 Sep26 ?        00:00:00 [kworker/R-iscsi]
+root        35     2  0 Sep26 ?        00:00:00 [kworker/R-dwc_o]
+root        36     2  0 Sep26 ?        00:00:00 [kworker/R-DWC N]
+root        38     2  0 Sep26 ?        00:00:00 [vchiq-slot/0]
+root        39     2  0 Sep26 ?        00:00:00 [vchiq-recy/0]
+root        40     2  0 Sep26 ?        00:00:00 [vchiq-sync/0]
+root        41     2  0 Sep26 ?        00:01:58 [kworker/u3:0-brcmf_wq/mmc1:0001:1]
+root        45     2  0 Sep26 ?        00:00:00 [kworker/R-mmc_c]
+root        47     2  0 Sep26 ?        00:00:01 [kworker/0:1H-kblockd]
+root       111     2  0 Sep26 ?        00:00:03 [jbd2/mmcblk0p2-8]
+root       112     2  0 Sep26 ?        00:00:00 [kworker/R-ext4-]
+root       126     2  0 Sep26 ?        00:00:00 [kworker/R-mld]
+root       127     2  0 Sep26 ?        00:00:00 [kworker/R-ipv6_]
+root       174     1  0 Sep26 ?        00:00:04 /lib/systemd/systemd-journald
+root       193     1  0 Sep26 ?        00:00:07 /lib/systemd/systemd-udevd
+systemd+   267     1  0 Sep26 ?        00:00:04 /lib/systemd/systemd-timesyncd
+avahi      321     1  0 Sep26 ?        00:00:35 avahi-daemon: running [raspberry.local]
+root       322     1  0 Sep26 ?        00:00:01 /usr/sbin/cron -f
+message+   323     1  0 Sep26 ?        00:00:28 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+avahi      325   321  0 Sep26 ?        00:00:00 avahi-daemon: chroot helper
+polkitd    331     1  0 Sep26 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+root       357     1  0 Sep26 ?        00:00:02 /lib/systemd/systemd-logind
+nobody     359     1  0 Sep26 ?        00:00:04 /usr/sbin/thd --triggers /etc/triggerhappy/triggers.d/ --socket /run/thd.socket --user nobody --deviceglob /dev/input/event*
+root       392     1  0 Sep26 ?        00:00:01 /usr/sbin/ModemManager
+root       393     1  0 Sep26 ?        00:02:04 /usr/sbin/NetworkManager --no-daemon
+root       395     1  0 Sep26 ?        00:00:05 /sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root       463     2  0 Sep26 ?        00:00:00 [vchiq-keep/0]
+root       464     2  0 Sep26 ?        00:00:00 [SMIO]
+root       466     2  0 Sep26 ?        00:00:00 [kworker/R-mmal-]
+root       467     2  0 Sep26 ?        00:00:00 [kworker/R-mmal-]
+root       468     2  0 Sep26 ?        00:00:00 [kworker/R-mmal-]
+root       471     2  0 Sep26 ?        00:00:00 [kworker/R-mmal-]
+root       473     2  0 Sep26 ?        00:00:00 [kworker/R-mmal-]
+root       477     2  0 Sep26 ?        00:00:00 [kworker/R-mmal-]
+root       479     2  0 Sep26 ?        00:00:00 [kworker/R-mmal-]
+root       526     1  0 Sep26 ?        00:00:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       555     1  0 Sep26 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root       560     2  0 Sep26 ?        00:00:00 [kworker/R-cfg80]
+root       561     2  0 Sep26 ?        00:00:00 [cec-vc4-hdmi]
+root       562     2  0 Sep26 ?        00:00:00 [irq/64-vc4 hdmi cec]
+root       563     2  0 Sep26 ?        00:00:00 [card0-crtc0]
+root       564     2  0 Sep26 ?        00:00:00 [card0-crtc1]
+root       565     2  0 Sep26 ?        00:00:00 [card0-crtc2]
+root       566     2  0 Sep26 ?        00:00:00 [card0-crtc3]
+root       567     2  0 Sep26 ?        00:00:00 [kworker/R-brcmf]
+root       568     2  0 Sep26 ?        00:00:15 [brcmf_wdog/mmc1:0001:1]
+root       810     1  0 Sep26 ?        00:00:00 /usr/libexec/bluetooth/bluetoothd
+root       852     2  0 Sep26 ?        00:00:00 [kworker/u3:3-hci0]
+root      1275     2  0 Sep26 ?        00:00:03 [kworker/u2:0-events_unbound]
+root      2069     2  0 Sep27 ?        00:00:00 [kworker/u2:3-events_unbound]
+root      2788     2  0 13:26 ?        00:00:00 [kworker/0:1-events]
+root      2833     2  0 13:31 ?        00:00:00 [kworker/0:0-events]
+root      2845     2  0 13:47 ?        00:00:00 [kworker/0:2-events]
+root      2850   526  0 13:49 ?        00:00:00 sshd: mario [priv]
+mario     2853     1  0 13:49 ?        00:00:01 /lib/systemd/systemd --user
+mario     2854  2853  0 13:49 ?        00:00:00 (sd-pam)
+mario     2873  2850  0 13:49 ?        00:00:00 sshd: mario@pts/0
+mario     2874  2873  0 13:49 pts/0    00:00:00 -bash
+mario     2931  2874  0 14:01 pts/0    00:00:00 script ps-log.txt
+mario     2932  2931  3 14:01 pts/1    00:00:00 bash -i
+mario     2935  2932 99 14:02 pts/1    00:00:00 ps -ef
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m ps -f -u mario
+[?2004lUID        PID  PPID  C STIME TTY          TIME CMD
+mario     2853     1  0 13:49 ?        00:00:01 /lib/systemd/systemd --user
+mario     2854  2853  0 13:49 ?        00:00:00 (sd-pam)
+mario     2873  2850  0 13:49 ?        00:00:00 sshd: mario@pts/0
+mario     2874  2873  0 13:49 pts/0    00:00:00 -bash
+mario     2931  2874  0 14:01 pts/0    00:00:00 script ps-log.txt
+mario     2932  2931  1 14:01 pts/1    00:00:00 bash -i
+mario     2936  2932 99 14:02 pts/1    00:00:00 ps -f -u mario
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m top &
+[?2004l[1] 2938
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m [?1l>pkill top 
+[?2004l
+[1]+  Stopped                 top
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m exit
+[?2004lexit
+There are stopped jobs.
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m [?2004l
+exit
+[?1l>
+
+Script done on 2024-09-28 14:02:29-04:00 [COMMAND_EXIT_CODE="1"]

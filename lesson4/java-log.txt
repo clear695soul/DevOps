@@ -1,0 +1,12 @@
+Script started on 2024-09-30 09:04:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="133" LINES="13"]
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m java --version
+[?2004lopenjdk 17.0.12 2024-07-16
+OpenJDK Runtime Environment (build 17.0.12+7-Raspbian-2deb12u1rpt1)
+OpenJDK Client VM (build 17.0.12+7-Raspbian-2deb12u1rpt1, mixed mode, emulated-client)
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m sudo update[K[K[K[K[K[K[K[K[K[K[Kjava --versionexit[Knano ps-log.txt [1Pcat[C[C[C[C[C[C[C[C[C[C[C[Cscript ps-log.txt[3Prm ps-log.txt script ps-log.txt[3Prm ps-log.txt [2@nano[C[C[C[C[C[C[C[C[C[C[C[C[1Pcat[C[C[C[C[C[C[C[C[C[C[C[Cscript ps-log.txt[2Pcat ps-log.txt [1@nano[C[C[C[C[C[C[C[C[C[C[C[C[2Prm[C[C[C[C[C[C[C[C[C[C[C[Cscript ps-log.txt[2Pcat ps-log.txt [1@nano[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kjava --version[Kupdate-java-alternatives --list
+[?2004ljava-1.17.0-openjdk-armhf      1711       /usr/lib/jvm/java-1.17.0-openjdk-armhf
+[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m sudo update-java-alternatives --set java-1.17.0-openjdk-armhf 
+[?2004l[?2004h]0;mario@raspberry: ~/Documents[01;32mmario@raspberry[00m:[01;34m~/Documents $[00m exit
+[?2004lexit
+
+Script done on 2024-09-30 09:05:53-04:00 [COMMAND_EXIT_CODE="0"]
