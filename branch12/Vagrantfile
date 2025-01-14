@@ -1,0 +1,31 @@
+ENV['VAGRANT_SERVER_URL'] = 'https://vagrant.elab.pro'
+
+Vagrant.configure(2) do |config|
+    
+    config.vm.box = "ubuntu/20.04"
+    config.ssh.insert_key = false
+  
+    config.vm.define "dev" do |subconfig|
+      subconfig.vm.provider "virtualbox" do |vb|
+        vb.name = "dev"
+      end
+      subconfig.vm.hostname = "dev"
+      subconfig.vm.network "private_network", ip: "192.168.56.51"
+      subconfig.vm.provision "add ssh.key", type: "file", source: "./ansible_id_rsa.pub", destination: "/home/vagrant/ansible_id_rsa.pub"
+      subconfig.vm.provision "install ssh key", type: "shell", path: "./script.sh"
+      
+    end
+  
+    config.vm.define "prod" do |subconfig|
+      subconfig.vm.provider "virtualbox" do |vb|
+        vb.name = "prod"
+      end
+      subconfig.vm.hostname = "prod"
+      subconfig.vm.network "private_network", ip: "192.168.56.52"
+      subconfig.vm.provision "add ssh.key", type: "file", source: "./ansible_id_rsa.pub", destination: "/home/vagrant/ansible_id_rsa.pub"
+      subconfig.vm.provision "install ssh key", type: "shell", path: "./script.sh"
+     
+      
+    end
+   
+  end

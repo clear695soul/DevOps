@@ -1,0 +1,35 @@
+---
+- name: configure VM
+  hosts: all
+  tasks:
+
+  - name: apt update
+    ansible.builtin.shell:
+      cmd: apt update -y && apt upgrade -y
+
+  - name: install wget
+    apt:
+      name: wget
+      state: latest
+
+  - name: install htop
+    apt:
+      name: htop
+      state: latest
+
+  - name: install nginx
+    apt:
+      name: nginx
+      state: latest
+  - name: started and enabled nginx
+    service:
+      name: nginx
+      state: started
+      enabled: yes
+
+  - debug:
+      msg: "This host is in {{ env_name }} environment"
+
+
+
+
