@@ -1,0 +1,88 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress-mysql
+  namespace: dev
+  labels:
+    app: wordpress
+spec:
+  type: ClusterIP
+  ports:
+    - name: wordpress-mysql
+      port: 3306
+      protocol: TCP
+      targetPort: 3306
+  selector:
+    app: wordpress
+    tier: mysql
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pv-claim
+  labels:
+    app: wordpress
+  namespace: dev
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: wordpress-mysql
+  labels:
+    app: wordpress
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: wordpress
+      tier: mysql
+  serviceName: "mysql"
+  replicas: 1 # by default is 1
+  minReadySeconds: 10 # by default is 0
+  template:
+    metadata:
+      labels:
+        app: wordpress
+        tier: mysql
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - image: mysql:8.0
+        name: mysql
+        # environment:
+        #   MYSQL_DATABASE: exampledb
+        #   MYSQL_USER: exampleuser
+        #   MYSQL_PASSWORD: examplepass
+        #   MYSQL_RANDOM_ROOT_PASSWORD: '1'
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            value: '1'
+          #  valueFrom:
+          #    secretKeyRef:
+          #      name: mysql-pass
+          #      key: password
+          - name: MYSQL_DATABASE
+            value: wordpress
+          - name: MYSQL_USER
+            value: wordpress
+          - name: MYSQL_PASSWORD
+            value: examplepass
+        # #     secretKeyRef:
+        # #       name: mysql-pass
+        # #       key: password
+        ports:
+        - containerPort: 3306
+          name: mysql
+        volumeMounts:
+        - name: mysql-persistent-storage
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-persistent-storage
+        persistentVolumeClaim:
+          claimName: mysql-pv-claim
