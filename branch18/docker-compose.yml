@@ -1,0 +1,73 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
+    volumes:
+      - type: volume
+        source: wp-data
+        target: /var/www/html
+      - type: bind
+        source: ./wp
+        target: /usr/src/wordpress/wp-content
+    networks:
+        frontend:
+          ipv4_address: 172.16.70.3
+        backend:
+          ipv4_address: 172.16.75.3
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - type: volume
+        source: wp-db
+        target: /var/lib/mysql
+    networks:
+        backend:
+          ipv4_address: 172.16.75.4
+  proxy:
+    build: ./proxy
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - type: bind
+        source: ./proxy/nginx
+        target: /etc/nginx/http.d
+    networks:
+      frontend:
+        ipv4_address: 172.16.70.2 
+
+volumes:
+  wp-data:
+  wp-db:
+
+networks:
+  frontend:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.70.0/24
+          gateway: 172.16.70.1
+  backend:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.75.0/24
+          gateway: 172.16.75.1
