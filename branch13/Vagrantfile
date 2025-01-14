@@ -1,0 +1,38 @@
+ENV['VAGRANT_SERVER_URL'] = 'https://vagrant.elab.pro'
+
+Vagrant.configure(2) do |config|
+    config.vm.define 'ubuntu' do |ubuntu|
+      ubuntu.vm.box = "ubuntu/20.04"
+      ubuntu.ssh.insert_key = false
+  
+    
+      ubuntu.vm.provider "virtualbox" do |vb|
+        vb.name = "ubuntu"
+      end
+      ubuntu.vm.hostname = "ubuntu"
+      ubuntu.vm.network "private_network", ip: "192.168.56.71"
+      ubuntu.vm.provision "add ssh.key", type: "file", source: "./ansible_id_rsa.pub", destination: "/home/vagrant/ansible_id_rsa.pub"
+      ubuntu.vm.provision "install ssh key", type: "shell", path: "./ssh_ubuntu.sh"
+      
+    end
+  
+
+    config.vm.define 'centos' do |centos|
+      centos.vm.box = "centos/7"
+      centos.ssh.insert_key = false
+
+    
+      centos.vm.provider "virtualbox" do |vb|
+        vb.name = "centos"
+      end
+      centos.vm.hostname = "centos"
+      centos.vm.network "private_network", ip: "192.168.56.72"
+      centos.vm.provision "add ssh.key", type: "file", source: "./ansible_id_rsa.pub", destination: "/home/vagrant/ansible_id_rsa.pub"
+      centos.vm.provision "install ssh key", type: "shell", path: "./ssh_centos.sh"
+      centos.vm.provision "add yum repo", type: "file", source: "./yum_update", destination: "/home/vagrant/yum_update"
+      centos.vm.provision "install yum repo", type: "shell", path: "./yum_update.sh"
+     
+      
+    end
+
+end

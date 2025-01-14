@@ -1,0 +1,8 @@
+---
+- name: Install Apache and MySQL
+  hosts: all
+  become: true
+  
+  roles:
+    - role: '/home/alex/Lesson13/roles/Apache'
+    - role: '/home/alex/Lesson13/roles/MySQL'
