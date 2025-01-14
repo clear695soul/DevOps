@@ -1,0 +1,9 @@
+[servers]
+server1 ansible_host=192.168.56.71
+server2 ansible_host=192.168.56.72
+
+[servers:vars]
+ansible_ssh_user=vagrant
+ansible_become=yes
+ansible_become_method=sudo
+env_name=dev

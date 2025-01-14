@@ -1,0 +1,1 @@
+This is MySQL role

@@ -1,0 +1,33 @@
+---
+- block:
+  - name: Update and upgrade apt packages
+    apt:
+      upgrade: yes
+      update_cache: yes
+
+  - name: install
+    apt:
+      name: apache2
+      state: latest
+
+  - debug:
+      msg: "Apache installed Ubuntu"
+  when: 
+    ansible_os_family == "Debian"
+
+- block:
+  - name: Update and upgrade yum packages
+    ansible.builtin.yum:
+      name: '*'
+      state: latest
+      exclude: kernel*,foo*
+
+  - name: install
+    yum:
+      name: httpd
+      state: latest
+
+  - debug:
+      msg: "Apache installed CentOS"
+  when: 
+    ansible_os_family == "RedHat"
