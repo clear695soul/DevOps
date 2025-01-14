@@ -1,0 +1,5 @@
+resources:
+  - namespace.yaml
+  - volumes.yaml
+  - wp-db.yaml
+  - wp-app.yaml
