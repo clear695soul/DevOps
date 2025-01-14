@@ -1,0 +1,13 @@
+#cloud-config
+datasource:
+  Ec2:
+    strict_id: false
+ssh_pwauth: no
+users:
+- name: ubuntu
+  sudo: 'ALL=(ALL) NOPASSWD:ALL'
+  shell: /bin/bash
+  ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD0JVZx+rhq0wgDmiHR/riD2ERGqTFbWaIydwop9VDR9yZToG67v6kUSlL7nbioQkqVaoDPubj+XrhRmgRjN/Tw68ujD3eTSm96OVz8CAsDgJNUYLYm9CnmWQnUQHTCHswadf1GUBKbUosd1/jbVGQ7B1vgJSV4761gtzOfPnHtnVfNrCAGAmGtAaUekOuK0ineZJCE5rT8KrdaabK+gxKzSOWnR/qEGZJMQ/xLheee8pLoY7BGkD7Z2uGxL1EzZjDCD2sGi/LNxbxn4thW63SEC2dRDcjpzEp08HDROhv1Hfi4tSSm9xSvsvteY27tsMSiuvCaOxV4gXNCrYmJtsOyJIyc67+grA6Szo2j7aDORlVLGy+6hcP8E46OV6z0F/Df1D1RUaeJAIjoKkOOXF5GP5iKrxI5w/Jro79fidWV01AuRyBmXmZPf2PuNeMKjRfXkAHpGcF2Cq4JoJ8hzPrgc0ZkD3P5z70CPCH+HGnZvihHgZu1vG7p4J7i5RZBKhk= root@DESKTOP-7N9E6VQ
+runcmd:
+  - []
