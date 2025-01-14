@@ -1,0 +1,575 @@
+Script started on 2024-08-22 18:05:04+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="198" LINES="35"]
+[?2004h]0;root@DESKTOP-7N9E6VQ: /mnt/c/Users/Alex/Desktop/Labs/lesson17root@DESKTOP-7N9E6VQ:/mnt/c/Users/Alex/Desktop/Labs/lesson17# exitdocker network rm wp-net[3Pinspect wp-app[10P./start.sh 
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/0)  docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/1)                                                                                                                                                                docker:default
+[?25h[1A[0G[?25l[+] Building 0.1s (2/2)                                                                                                                                                                docker:default
+[34m => [internal] load build definition from Dockerfile                                                                                                                                             0.0s
+[0m[34m => => transferring dockerfile: 242B                                                                                                                                                             0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:22.04                                                                                                                                  0.1s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (10/10) FINISHED                                                                                                                                                     docker:default
+[34m => [internal] load build definition from Dockerfile                                                                                                                                             0.0s
+[0m[34m => => transferring dockerfile: 242B                                                                                                                                                             0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:22.04                                                                                                                                  0.1s
+[0m[34m => [internal] load .dockerignore                                                                                                                                                                0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                                                  0.0s
+[0m[34m => [1/5] FROM docker.io/library/ubuntu:22.04@sha256:56887c5194fddd8db7e36ced1c16b3569d89f74c801dc8a5adbf48236fb34564                                                                            0.0s
+[0m[34m => [internal] load build context                                                                                                                                                                0.0s
+[0m[34m => => transferring context: 31B                                                                                                                                                                 0.0s
+[0m[34m => CACHED [2/5] WORKDIR /root                                                                                                                                                                   0.0s
+[0m[34m => CACHED [3/5] COPY ./script.sh .                                                                                                                                                              0.0s
+[0m[34m => CACHED [4/5] RUN chmod 777 ./script.sh                                                                                                                                                       0.0s
+[0m[34m => CACHED [5/5] RUN ./script.sh                                                                                                                                                                 0.0s
+[0m[34m => exporting to image                                                                                                                                                                           0.0s
+[0m[34m => => exporting layers                                                                                                                                                                          0.0s
+[0m[34m => => writing image sha256:f0a815e228db90ce627d55cfa06c41762167815dfdfd1beeb4944572e63a3ee9                                                                                                     0.0s
+[0m[34m => => naming to docker.io/library/wp-app                                                                                                                                                        0.0s
+[0m[?25h[1A[1B[0G[?25l[+] Building 0.0s (0/0)  docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/1)                                                                                                                                                                docker:default
+[?25h[1A[0G[?25l[+] Building 0.1s (2/2)                                                                                                                                                                docker:default
+[34m => [internal] load build definition from Dockerfile                                                                                                                                             0.0s
+[0m[34m => => transferring dockerfile: 133B                                                                                                                                                             0.0s
+[0m[34m => [internal] load metadata for docker.io/library/mysql:latest                                                                                                                                  0.1s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (5/5) FINISHED                                                                                                                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                                                                                                                             0.0s
+[0m[34m => => transferring dockerfile: 133B                                                                                                                                                             0.0s
+[0m[34m => [internal] load metadata for docker.io/library/mysql:latest                                                                                                                                  0.1s
+[0m[34m => [internal] load .dockerignore                                                                                                                                                                0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                                                  0.0s
+[0m[34m => CACHED [1/1] FROM docker.io/library/mysql:latest@sha256:eb00f19a38312b85bfb7195eead2d07d35279f2a6a61b3dc994094dcefa57986                                                                     0.0s
+[0m[34m => exporting to image                                                                                                                                                                           0.0s
+[0m[34m => => exporting layers                                                                                                                                                                          0.0s
+[0m[34m => => writing image sha256:e13fac31a55a1ce3267d82a54eeb8cf6aba83c7eae22e1f60818ffa4ee67be84                                                                                                     0.0s
+[0m[34m => => naming to docker.io/library/wp-database                                                                                                                                                   0.0s
+[0m[?25he54979a0d12c9d9b5102c42b2bda8f23a64a91106055f5ff03373a0b688c6cf7
+wp-db
+wp-data
+071e8a52cf6f5c6e83d2b72f9eac267e8a2b11df49e38c0c399ebab3604046d2
+86b6b7a023d24f6d49c9e1731ac594a25cf404d71468cfbaa22cc3384a9b0947
+[?2004h]0;root@DESKTOP-7N9E6VQ: /mnt/c/Users/Alex/Desktop/Labs/lesson17root@DESKTOP-7N9E6VQ:/mnt/c/Users/Alex/Desktop/Labs/lesson17# docker inspect wp-app
+[?2004l[
+    {
+        "Id": "86b6b7a023d24f6d49c9e1731ac594a25cf404d71468cfbaa22cc3384a9b0947",
+        "Created": "2024-08-22T15:05:10.226320263Z",
+        "Path": "apache2ctl",
+        "Args": [
+            "-D",
+            "FOREGROUND"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 1,
+            "Error": "",
+            "StartedAt": "2024-08-22T15:05:10.614171717Z",
+            "FinishedAt": "2024-08-22T15:05:10.632927603Z"
+        },
+        "Image": "sha256:f0a815e228db90ce627d55cfa06c41762167815dfdfd1beeb4944572e63a3ee9",
+        "ResolvConfPath": "/var/lib/docker/containers/86b6b7a023d24f6d49c9e1731ac594a25cf404d71468cfbaa22cc3384a9b0947/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/86b6b7a023d24f6d49c9e1731ac594a25cf404d71468cfbaa22cc3384a9b0947/hostname",
+        "HostsPath": "/var/lib/docker/containers/86b6b7a023d24f6d49c9e1731ac594a25cf404d71468cfbaa22cc3384a9b0947/hosts",
+        "LogPath": "/var/lib/docker/containers/86b6b7a023d24f6d49c9e1731ac594a25cf404d71468cfbaa22cc3384a9b0947/86b6b7a023d24f6d49c9e1731ac594a25cf404d71468cfbaa22cc3384a9b0947-json.log",
+        "Name": "/wp-app",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "wp-data:/var/www/html"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                35,
+                198
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "/mnt/c/Users/Alex/Desktop/Labs/lesson17/apache",
+                    "Target": "/etc/apache2"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/49785d3de6ccf8daaaac26c694c35c0e26d63f4d15ed61a8bdb869727e1df2c4-init/diff:/var/lib/docker/overlay2/jwml9mhn7o9yjvnfza9uh2dnz/diff:/var/lib/docker/overlay2/4m50inkermu270s5s17n9t0cc/diff:/var/lib/docker/overlay2/xw7f6xb7s5f3fpn6tdtns0dol/diff:/var/lib/docker/overlay2/dx7ynrpqp7pgtqkft97iq6rvg/diff:/var/lib/docker/overlay2/cb88ef4f4aa692d570a21984e957814c04e28bf7e774d0d329bcd83cec10cf6b/diff",
+                "MergedDir": "/var/lib/docker/overlay2/49785d3de6ccf8daaaac26c694c35c0e26d63f4d15ed61a8bdb869727e1df2c4/merged",
+                "UpperDir": "/var/lib/docker/overlay2/49785d3de6ccf8daaaac26c694c35c0e26d63f4d15ed61a8bdb869727e1df2c4/diff",
+                "WorkDir": "/var/lib/docker/overlay2/49785d3de6ccf8daaaac26c694c35c0e26d63f4d15ed61a8bdb869727e1df2c4/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "wp-data",
+                "Source": "/var/lib/docker/volumes/wp-data/_data",
+                "Destination": "/var/www/html",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/mnt/c/Users/Alex/Desktop/Labs/lesson17/apache",
+                "Destination": "/etc/apache2",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "86b6b7a023d2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "apache2ctl",
+                "-D",
+                "FOREGROUND"
+            ],
+            "Image": "wp-app",
+            "Volumes": {
+                "/etc/apache2": {}
+            },
+            "WorkingDir": "/root",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "desktop.docker.io/wsl-distro": "Ubuntu",
+                "developed_by": "@LeoAlecksey",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "f702b9f085bde4e531f6aba7c53b1bf250aa1a6ad49bb5b9b434bb427297dca1",
+            "SandboxKey": "/var/run/docker/netns/f702b9f085bd",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "",
+                    "NetworkID": "21c2128f4776c6a7f291e9bcbaf4d0d58a2739fa0720b050e35424e1f97169b2",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": null
+                },
+                "wp-net": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [
+                        "86b6b7a023d2"
+                    ],
+                    "MacAddress": "",
+                    "NetworkID": "",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": {},
+                    "DNSNames": [
+                        "wp-app",
+                        "86b6b7a023d2"
+                    ]
+                }
+            }
+        }
+    }
+]
+[?2004h]0;root@DESKTOP-7N9E6VQ: /mnt/c/Users/Alex/Desktop/Labs/lesson17root@DESKTOP-7N9E6VQ:/mnt/c/Users/Alex/Desktop/Labs/lesson17# docker inspect wp-app[K[K[Kdatabases[K
+[?2004l[
+    {
+        "Id": "071e8a52cf6f5c6e83d2b72f9eac267e8a2b11df49e38c0c399ebab3604046d2",
+        "Created": "2024-08-22T15:05:09.833949664Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 1,
+            "Error": "",
+            "StartedAt": "2024-08-22T15:05:10.174210045Z",
+            "FinishedAt": "2024-08-22T15:05:10.588122558Z"
+        },
+        "Image": "sha256:e13fac31a55a1ce3267d82a54eeb8cf6aba83c7eae22e1f60818ffa4ee67be84",
+        "ResolvConfPath": "/var/lib/docker/containers/071e8a52cf6f5c6e83d2b72f9eac267e8a2b11df49e38c0c399ebab3604046d2/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/071e8a52cf6f5c6e83d2b72f9eac267e8a2b11df49e38c0c399ebab3604046d2/hostname",
+        "HostsPath": "/var/lib/docker/containers/071e8a52cf6f5c6e83d2b72f9eac267e8a2b11df49e38c0c399ebab3604046d2/hosts",
+        "LogPath": "/var/lib/docker/containers/071e8a52cf6f5c6e83d2b72f9eac267e8a2b11df49e38c0c399ebab3604046d2/071e8a52cf6f5c6e83d2b72f9eac267e8a2b11df49e38c0c399ebab3604046d2-json.log",
+        "Name": "/wp-database",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "wp-db:/var/lib/mysql"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                35,
+                198
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/fc7a24136b5e27c6f923e98ca60f387df8bde955cce6942fb6fa7c5b787f1c07-init/diff:/var/lib/docker/overlay2/f20ff5ee12fdd5e866ea7baac50faa8044861d3c3875d286a74817cdca2ecc32/diff:/var/lib/docker/overlay2/930b84a072b12cd4924edff18d72ffb654b0228a60e7c916404042fbccd9ab41/diff:/var/lib/docker/overlay2/3a5b05f6befc42983ea24335c4783eb5d2c1bd28a604f697f7071494ac50a63a/diff:/var/lib/docker/overlay2/5f2b5d832beac97bf27fb79ff9ea901288ea767ac2004aaa135a64286b107eee/diff:/var/lib/docker/overlay2/83723190de3214690dd6e80fc815f68b7d7a9a1e28a32c17be85f6219d652c33/diff:/var/lib/docker/overlay2/31e55dab59e70d49bcb6bdd8ae10f14d3750e73a25bcf1f2bc25fa3134395776/diff:/var/lib/docker/overlay2/37785f75f8c7b305ae67bda612a0822200b0b1d78f308791f12978121a96dbaf/diff:/var/lib/docker/overlay2/35f2624cc0a0b0ab36132a8e735b02c024422a9862baadd323dccc2bbded29c5/diff:/var/lib/docker/overlay2/0a69f0def772e136424a14a8ee0b3c63d5249503c7a377c05fe1e9944c6c70ee/diff:/var/lib/docker/overlay2/65c253a2a2def31f59a3e1aefb32888d91bf1a55c6fff8961a2f3f7abc86b8a3/diff",
+                "MergedDir": "/var/lib/docker/overlay2/fc7a24136b5e27c6f923e98ca60f387df8bde955cce6942fb6fa7c5b787f1c07/merged",
+                "UpperDir": "/var/lib/docker/overlay2/fc7a24136b5e27c6f923e98ca60f387df8bde955cce6942fb6fa7c5b787f1c07/diff",
+                "WorkDir": "/var/lib/docker/overlay2/fc7a24136b5e27c6f923e98ca60f387df8bde955cce6942fb6fa7c5b787f1c07/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "wp-db",
+                "Source": "/var/lib/docker/volumes/wp-db/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "fa17285a5803b062764f9bb262afdcd04f3b351b11cac4ec8108bd448b09850c",
+                "Source": "/var/lib/docker/volumes/fa17285a5803b062764f9bb262afdcd04f3b351b11cac4ec8108bd448b09850c/_data",
+                "Destination": "/wp-db",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "071e8a52cf6f",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.16",
+                "MYSQL_MAJOR=innovation",
+                "MYSQL_VERSION=8.1.0-1.el8",
+                "MYSQL_SHELL_VERSION=8.0.34-1.el8"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "wp-database",
+            "Volumes": {
+                "/var/lib/mysql": {},
+                "/wp-db": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "desktop.docker.io/wsl-distro": "Ubuntu",
+                "developed_by": "@LeoAlecksey"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "5af5742595707c2e73e3b19c4ab91975b10ef4c56c08a7858321cbaa194c14d4",
+            "SandboxKey": "/var/run/docker/netns/5af574259570",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "",
+                    "NetworkID": "21c2128f4776c6a7f291e9bcbaf4d0d58a2739fa0720b050e35424e1f97169b2",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": null
+                },
+                "wp-net": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [
+                        "071e8a52cf6f"
+                    ],
+                    "MacAddress": "",
+                    "NetworkID": "",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": {},
+                    "DNSNames": [
+                        "wp-database",
+                        "071e8a52cf6f"
+                    ]
+                }
+            }
+        }
+    }
+]
+[?2004h]0;root@DESKTOP-7N9E6VQ: /mnt/c/Users/Alex/Desktop/Labs/lesson17root@DESKTOP-7N9E6VQ:/mnt/c/Users/Alex/Desktop/Labs/lesson17#  [Kвфефифыу
+[?2004lвфефифыу: command not found
+[?2004h]0;root@DESKTOP-7N9E6VQ: /mnt/c/Users/Alex/Desktop/Labs/lesson17root@DESKTOP-7N9E6VQ:/mnt/c/Users/Alex/Desktop/Labs/lesson17# учше
+[?2004lучше: command not found
+[?2004h]0;root@DESKTOP-7N9E6VQ: /mnt/c/Users/Alex/Desktop/Labs/lesson17root@DESKTOP-7N9E6VQ:/mnt/c/Users/Alex/Desktop/Labs/lesson17# exit
+[?2004lexit
+
+Script done on 2024-08-22 18:05:59+03:00 [COMMAND_EXIT_CODE="127"]
