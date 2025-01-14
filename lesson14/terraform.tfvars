@@ -1,0 +1,7 @@
+ip_host = "89.169.169.132"
+folder_id_yc = "b1gtp7jft4ciqlfode10"
+pw = "admin"
+cloud_id_yc = "b1gvauvnumqp9ut9j021"
+zone_yc = "ru-central1-b"
+pub_key = "./yc_rsa.pub"
+priv_key = "./yc_rsa"
