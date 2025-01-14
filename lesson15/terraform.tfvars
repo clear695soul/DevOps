@@ -1,0 +1,7 @@
+folder_id_yc = "b1gtp7jft4ciqlfode10"
+cloud_id_yc  = "b1gvauvnumqp9ut9j021"
+pub_key      = "./yc_rsa.pub"
+priv_key     = "./yc_rsa"
+zone_yc = "ru-central1-b"
+yc_vpc_id    = "enpqlv2nrarcvd5n06ts"
+key_file     = "./alex.json"
