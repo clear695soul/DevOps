@@ -1,0 +1,241 @@
+Script started on 2023-12-23 23:42:20+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="154" LINES="26"]
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[134C[23:42:21][144D[?1h=[?2004hkk[90mubectl get pods[39m[15Dk[39mu[39mb[39me[39mc[39mt[39ml[39m [39mc[39m [39m [39m [39m [39m [39m [39m [90mluster-info [39m[12D[39mr[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90meate -f redis.yaml[39m[18D[39me[39ma[39mt[39me[39m [39md[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90meployment nginx --image nginx --namespace=codeby[39m[48D[39me[39mp[39ml[39mo[39my[39mm[39me[39mn[39mt[39m [39mn[39mg[39mi[39mn[39mx[39m [39m-[39m-[39mi[39mm[39ma[39mg[39me[39m [39mn [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24D[90mnginx --namespace=codeby[39m[24D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [25D[90m nginx --namespace=codeby[39m[25D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [26D[90me nginx --namespace=codeby[39m[26D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [27D[90mge nginx --namespace=codeby[39m[27D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28D[90mage nginx --namespace=codeby[39m[28D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[90mmage nginx --namespace=codeby[39m[29D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [30D[90mimage nginx --namespace=codeby[39m[30D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[90m-image nginx --namespace=codeby[39m[31D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [32D[90m--image nginx --namespace=codeby[39m[32D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [33D[90m --image nginx --namespace=codeby[39m[33D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [34D[90mx --image nginx --namespace=codeby[39m[34D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [35D[90mnx --image nginx --namespace=codeby[39m[35D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [36D[90minx --image nginx --namespace=codeby[39m[36D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [37D[90mginx --image nginx --namespace=codeby[39m[37D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [38D[90mnginx --image nginx --namespace=codeby[39m[38D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39D[90m nginx --image nginx --namespace=codeby[39m[39D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [40D[90mt nginx --image nginx --namespace=codeby[39m[40D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [41D[90mnt nginx --image nginx --namespace=codeby[39m[41D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [42D[90ment nginx --image nginx --namespace=codeby[39m[42D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [43D[90mment nginx --image nginx --namespace=codeby[39m[43D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [44D[90myment nginx --image nginx --namespace=codeby[39m[44D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [45D[90moyment nginx --image nginx --namespace=codeby[39m[45D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [46D[90mloyment nginx --image nginx --namespace=codeby[39m[46D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [47D[90mployment nginx --image nginx --namespace=codeby[39m[47D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [48D[90meployment nginx --image nginx --namespace=codeby[39m[48D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [49D[90m-f redis.yaml[39m[13D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[90m -f redis.yaml[39m[14D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90me -f redis.yaml[39m[15D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[90mte -f redis.yaml[39m[16D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90mate -f redis.yaml[39m[17D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[90meate -f redis.yaml[39m[18D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[90mluster-info [39m[12D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[90mget pods[39m[8D[39mg[39me[39mn[39m [39m [39m [39m [39m  [90mt pods[39m[39mt[39m [39mn[39m [39m [39m [90mamespace[39m[8D[39ma[39mm[39me[39ms[39mp[39ma[39mc[39me[?1l>[?2004l
+
+]2;kubectl get namespace]1;kubectlE1220 23:43:32.253378   36260 memcache.go:265] couldn't get current server API group list: Get "http://localhost:8080/api?timeout=32s": dial tcp [::1]:8080: connect: connection refused
+E1220 23:43:32.256316   36260 memcache.go:265] couldn't get current server API group list: Get "http://localhost:8080/api?timeout=32s": dial tcp [::1]:8080: connect: connection refused
+E1220 23:43:32.258931   36260 memcache.go:265] couldn't get current server API group list: Get "http://localhost:8080/api?timeout=32s": dial tcp [::1]:8080: connect: connection refused
+E1220 23:43:32.260878   36260 memcache.go:265] couldn't get current server API group list: Get "http://localhost:8080/api?timeout=32s": dial tcp [::1]:8080: connect: connection refused
+E1220 23:43:32.262677   36260 memcache.go:265] couldn't get current server API group list: Get "http://localhost:8080/api?timeout=32s": dial tcp [::1]:8080: connect: connection refused
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[134C[23:43:32][144D[?1h=[?2004hkubectl get namespace[21Dskubectl get namespace[21Dsukubectl get namespace[21Ddkubectl get namespace[21Dokubectl get namespace[21D kubectl get namespace[21D[?1l>[?2004l
+
+]2;sudo kubectl get namespace]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+NAME                 STATUS   AGE
+codeby               Active   7h11m
+default              Active   7h42m
+kube-node-lease      Active   7h42m
+kube-public          Active   7h42m
+kube-system          Active   7h42m
+local-path-storage   Active   7h42m
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[134C[23:43:40][144D[?1h=[?2004haa[90mlias kubectl='sudo kubectl'[39m[27Da[39ml[39mi[39ma[39ms[39m [39mk[39mu[39mb[39me[39mc[39mt[39ml[39m=[39m'[39ms[39mu[39md[39mo[39m [39mk[39mu[39mb[39me[39mc[39mt[39ml[39m'[?1l>[?2004l
+
+]2;alias kubectl='sudo kubectl']1;alias[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[134C[23:43:52][144D[?1h=[?2004hkk[90mubectl get namespace[39m[20Dk[39mu[39mb[39me
+
+[J[00mkubectl[0m  [00m[Jkubectx[0m  [00m[Jkubens[0m [00m[J[A[0m[27m[24m
+[9Ckube[90mctl get namespace[39m[K[113C[23:43:52][140D[39mc[39mt
+
+[J[J[00mkubectl[0m  [00m[Jkubectx[J[A[0m[27m[24m
+[9Ckubect[90ml get namespace[39m[K[113C[23:43:52][138D[39ml[39m[1m [0m[0m [39mc[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90mluster-info [39m[12D[39mr[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90meate -f redis.yaml[39m[18D[39me[39ma[39mt[39me[39m [39md[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90meployment nginx --image nginx --namespace=codeby[39m[48D[39me[39mp[39ml[39mo[39my[39mm[39me[39mn[39mt[39m [39mn[39mg[39mi[39mn[39mx[39m [39m-[39m-[39mi[39mm[39ma[39mg[39me[39m [39mn[39mg[39mi[39mn[39mx[39m [39m-[39m-[39mn[39ma[39mm[39me[39ms[39mp[39ma[39mc[39me[39m=[39mc[39mo[39md[39my[39m [39m  [90meby[39m[39me[39mb[39my[?1l>[?2004l
+
+[J]2;sudo kubectl create deployment nginx --image nginx --namespace=codeby]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+error: failed to create deployment: deployments.apps "nginx" already exists
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[134C[23:44:53][144D[?1h=[?2004hkubectl create deployment nginx --image nginx --namespace=codeby1 --image nginx --namespace=codeby[33D --image nginx --namespace=codeby [34D- --image nginx --namespace=codeby[33Df --image nginx --namespace=codeby[33Di --image nginx --namespace=codeby[33Dr --image nginx --namespace=codeby[33Ds --image nginx --namespace=codeby[33Dt --image nginx --namespace=codeby[33D[?1l>[?2004l
+
+]2;sudo kubectl create deployment nginx-first --image nginx --namespace=codeby]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+deployment.apps/nginx-first created
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[134C[23:45:20][144D[?1h=[?2004hkk[90mubectl create deployment nginx-first --image nginx --namespace=codeby[39m[69Dk[39mu[39mb[39me[39mc[39mt[39ml[39m [39mg[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [61D[90met namespace[39m[12D[39me[39mt[39m [39mp[39m [39m [39m [39m [39m [39m [39m [39m [8D[90mods[39m[39mo[39md[39ms[?1l>[?2004l
+
+]2;sudo kubectl get pods]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+No resources found in default namespace.
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[134C[23:45:50][144D[?1h=[?2004hkubectl get pods -n codeby[?1l>[?2004l
+
+]2;sudo kubectl get pods -n codeby]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+NAME                           READY   STATUS    RESTARTS   AGE
+nginx-77b4fdf86c-v8qph         1/1     Running   0          7h11m
+nginx-first-7dbfd449f4-jnrqf   1/1     Running   0          44s
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[134C[23:46:04][144D[?1h=[?2004hkkubectl config set-context --current --namespace=codeby[55D[7mk[7mu[7mb[7me[7mc[7mt[7ml[7m [7mc[7mo[7mn[7mf[7mi[7mg[7m [7ms[7me[7mt[7m-[7mc[7mo[7mn[7mt[7me[7mx[7mt[7m [7m-[7m-[7mc[7mu[7mr[7mr[7me[7mn[7mt[7m [7m-[7m-[7mn[7ma[7mm[7me[7ms[7mp[7ma[7mc[7me[7m=[7mc[7mo[7md[7me[7mb[7my[27m[55D[27mk[27mu[27mb[27me[27mc[27mt[27ml[27m [27mc[27mo[27mn[27mf[27mi[27mg[27m [27ms[27me[27mt[27m-[27mc[27mo[27mn[27mt[27me[27mx[27mt[27m [27m-[27m-[27mc[27mu[27mr[27mr[27me[27mn[27mt[27m [27m-[27m-[27mn[27ma[27mm[27me[27ms[27mp[27ma[27mc[27me[27m=[27mc[27mo[27md[27me[27mb[27my[?1l>[?2004l
+
+]2;sudo kubectl config set-context --current --namespace=codeby]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+Context "kind-kind-2" modified.
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:20:53][144D[?1h=[?2004hkk[90mubectl config set-context --current --namespace=codeby[39m[54Dk[39mu[39mb[39me[39mc[39mt
+
+[J[00mkubectl[0m  [00m[Jkubectx[J[A[0m[27m[24m
+[9Ckubect[90ml config set-context --current --namespace=codeby[39m[K[80C[0:20:53][138D[39ml[39m[1m [0m[0m [39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [46D[90mpply -f nginx.yaml[39m[18D[39mp[39mp[39ml[39my[39m [39m-[39mf[39m [39mn[39mg[39mi[39mn[39mx[39m.[39my[39ma[39mm[39ml[?1l>[?2004l
+
+[J]2;sudo kubectl apply -f nginx.yaml]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+deployment.apps/nginx-deployment created
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:21:14][144D[?1h=[?2004hkk[90mubectl apply -f nginx.yaml[39m[26Dk[39mu[39md[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24De  [90mbectl apply -f nginx.yaml[39m[25D[39mb[39me[39mc[39mt[39ml[39m[1m [0m[0m [39mg[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[90met pods -n codeby[39m[17D[39me[39mt[39m [39mp[39mo[39md[39ms[39m [39m-[39mn[39m [39mc[39mo[39md[39me[39mb[39my[?1l>[?2004l
+
+]2;sudo kubectl get pods -n codeby]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+NAME                               READY   STATUS    RESTARTS   AGE
+nginx-77b4fdf86c-v8qph             1/1     Running   0          7h47m
+nginx-deployment-cbdccf466-6r77v   1/1     Running   0          19s
+nginx-deployment-cbdccf466-j5tsr   1/1     Running   0          19s
+nginx-first-7dbfd449f4-jnrqf       1/1     Running   0          36m
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:21:33][144D[?1h=[?2004hcc[90mp nginx.yaml config[39m[19Dc[39mo[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18Dde  c c[90mp nginx.yaml config[39m[19D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20Dkk[90mubectl get pods -n codeby[39m[25Dk[39mu[39mb[39me[39mc[39mt
+
+[J[00mkubectl[0m  [00m[Jkubectx[J[A[0m[27m[24m
+[9Ckubect[90ml get pods -n codeby[39m[K[109C[0:21:33][138D[39ml[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90mdelete pods busybox-sleep-less[39m[30D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[90mget pods -n codeby[39m[18D[39md[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90melete deployments nginx-deployment[39m[34D[39mi[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [33Dff -f / config[1m/[0m[0m [?1l>[?2004l
+
+[J]2;sudo kubectl diff -f config]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:22:46][144D[?1h=[?2004hkubectl diff -f config -f config [11D -f config [11D -f config [11D -f config [11Da -f config[10Dp -f config[10D
+
+[00mapi-resources  -- Print the supported API resources on the server
+api-versions   -- Print the supported API versions on the server, in the form of "group/version"
+[Japply          -- Apply a configuration to a resource by file name or stdin[J[3A[0m[27m[24m
+[9Ckubectl ap -f config[K[115C[0:22:46][134Dp -f config[10Dl -f config[10Dy -f config[10D[1m [0m -f config[10D[0m -f config [10D[1C[1C[1C[1C[1C[1C[1C[1C[1C/[?1l>[?2004l
+
+[J]2;sudo kubectl apply -f config/]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+deployment.apps/nginx-deployment unchanged
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:23:03][144D[?1h=[?2004hkubectl apply -f config/[16Ddiff -f config  [14Dget pods -n codeby[18Dapply -f nginx.yaml[19Dget pods -n codeby [?1l>[?2004l
+
+]2;sudo kubectl get pods -n codeby]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+NAME                               READY   STATUS    RESTARTS   AGE
+nginx-77b4fdf86c-v8qph             1/1     Running   0          7h49m
+nginx-deployment-cbdccf466-6r77v   1/1     Running   0          2m3s
+nginx-deployment-cbdccf466-j5tsr   1/1     Running   0          2m3s
+nginx-first-7dbfd449f4-jnrqf       1/1     Running   0          37m
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:23:17][144D[?1h=[?2004hkubectl get pods -n codeby[18Dapply -f config/  [?1l>[?2004l
+
+]2;sudo kubectl apply -f config/]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+deployment.apps/nginx-deployment unchanged
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:23:38][144D[?1h=[?2004hvv[90mi ~/.zshrc[39m[10Dv[39mi[39m [39mc[39m [39m [39m [39m [39m [39m [39m onfig[1m/[0m[0m/nginx.yaml[1m [0m[0m [?1l>[?2004l
+
+]2;vi config/nginx.yaml]1;vi[?1006;1000h[?1002h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;26r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[26;1H"config/nginx.yaml" 19L, 371B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[36mapiVersion[m[35m:[m apps/v1
+[36mkind[m[35m:[m Deployment[2;17H[K[3;1H[36mmetadata[m[35m:[m[3;10H[K[4;3H[36mname[m[35m:[m nginx-deployment
+[36mspec[m[35m:[m
+  [36mselector[m[35m:[m
+    [36mmatchLabels[m[35m:[m[8;7H[36mapp[m[35m:[m nginx
+  [36mreplicas[m[35m:[m [31m2[m[34m # tells deployment to run 2 pods matching the template[m
+  [36mtemplate[m[35m:[m
+    [36mmetadata[m[35m:[m[12;7H[36mlabels[m[35m:[m[13;9H[36mapp[m[35m:[m nginx
+    [36mspec[m[35m:[m[15;7H[36mcontainers[m[35m:[m[16;7H[38;5;130m- [m[36mname[m[35m:[m nginx[17;9H[36mimage[m[35m:[m nginx:1.14.2[18;9H[36mports[m[35m:[m[19;9H[38;5;130m- [m[36mcontainerPort[m[35m:[m [31m80[m
+[94m~                                                                                                                                                         [21;1H~                                                                                                                                                         [22;1H~                                                                                                                                                         [23;1H~                                                                                                                                                         [24;1H~                                                                                                                                                         [25;1H~                                                                                                                                                         [m[26;137H1,1[10CВ[26;151Hе[26;152Hс[26;153Hь[1;1H[?25h[?4m[?25l[26;127H/[1;1H[26;128H0[1;1H[26;129H0[1;1H[26;130H0[1;1H[26;131H0[1;1H[26;132H/[1;1H[26;133H0[1;1H[26;134H0[1;1H[26;135H0[1;1H[26;136H0[1;1H[26;127H          [1;1H[27m[23m[29m[m[H[2J[1;1H[1m[96mapiVersion[m[38;5;224m:[m apps/v1
+[1m[96mkind[m[38;5;224m:[m Deployment
+[1m[96mmetadata[m[38;5;224m:[m
+  [1m[96mname[m[38;5;224m:[m nginx-deployment
+[1m[96mspec[m[38;5;224m:[m
+  [1m[96mselector[m[38;5;224m:[m
+    [1m[96mmatchLabels[m[38;5;224m:[m[8;7H[1m[96mapp[m[38;5;224m:[m nginx
+  [1m[96mreplicas[m[38;5;224m:[m [95m2[m[96m # tells deployment to run 2 pods matching the template[m
+  [1m[96mtemplate[m[38;5;224m:[m
+    [1m[96mmetadata[m[38;5;224m:[m[12;7H[1m[96mlabels[m[38;5;224m:[m[13;9H[1m[96mapp[m[38;5;224m:[m nginx
+    [1m[96mspec[m[38;5;224m:[m[15;7H[1m[96mcontainers[m[38;5;224m:[m[16;7H[93m- [m[1m[96mname[m[38;5;224m:[m nginx[17;9H[1m[96mimage[m[38;5;224m:[m nginx:1.14.2[18;9H[1m[96mports[m[38;5;224m:[m[19;9H[93m- [m[1m[96mcontainerPort[m[38;5;224m:[m [95m80[m
+[94m~                                                                                                                                                         [21;1H~                                                                                                                                                         [22;1H~                                                                                                                                                         [23;1H~                                                                                                                                                         [24;1H~                                                                                                                                                         [25;1H~                                                                                                                                                         [m[26;137H1,1[10CВ[26;151Hе[26;152Hс[26;153Hь[26;1H"config/nginx.yaml" 19L, 371B[1;1H[?25h[?25l[26;127H~@k[1;1H[26;127H   [2;1H[26;137H2[2;1H[?25h[?25l[26;127H~@k[2;1H[26;127H   [3;1H[26;137H3[3;1H[?25h[?25l[26;127H~@k[3;1H[26;127H   [4;1H[26;137H4[4;1H[?25h[?25l[26;127H~@k[4;1H[26;127H   [4;2H[26;139H2[4;2H[?25h[?25l[26;127H~@k[4;2H[26;127H   [4;3H[26;139H3[4;3H[?25h[?25l[26;127H~@k[4;3H[26;127H   [4;4H[26;139H4[4;4H[?25h[?25l[26;127H~@k[4;4H[26;127H   [4;5H[26;139H5[4;5H[?25h[?25l[26;139H6[4;6H[?25h[?25l[26;139H7[4;7H[?25h[?25l[26;127H~@k[4;7H[26;127H   [4;8H[26;139H8[4;8H[?25h[?25l[26;127H~@k[4;8H[26;127H   [4;9H[26;139H9[4;9H[?25h[?25l[26;127H~@k[4;9H[26;127H   [4;10H[26;139H10[4;10H[?25h[?25l[26;140H1[4;11H[?25h[?25l[26;140H2[4;12H[?25h[?25l[26;140H3[4;13H[?25h[?25l[26;127H~@k[4;13H[26;127H   [4;14H[26;140H4[4;14H[?25h[?25l[26;127H~@k[4;14H[26;127H   [4;15H[26;140H5[4;15H[?25h[?25l[26;140H6[4;16H[?25h[?25l[26;140H7[4;17H[?25h[?25l[26;140H8[4;18H[?25h[?25l[26;127H~@k[4;18H[26;127H   [4;19H[26;140H9[4;19H[?25h[?25l[26;127H~@k[4;19H[26;127H   [4;20H[26;139H20[4;20H[?25h[?25l[26;140H1[4;21H[?25h[?25l[26;140H2[4;22H[?25h[?25l[26;140H3[4;23H[?25h[?25l[26;127H~@k[4;23H[26;127H   [4;24H[26;140H4[4;24H[?25h[?25l[26;127H~@k[4;24H[26;127H   [4;24H[?25h[?25l[26;127H~@k[4;24H[26;127H   [4;24H[?25h[?25l[26;127H~@k[4;24H[26;127H   [4;24H[?25h[?25l[26;127H~@k[4;24H[26;127H   [4;23H[26;140H3[4;23H[?25h[?25l[26;127H~@k[4;23H[26;127H   [4;22H[26;140H2[4;22H[?25h[?25l[26;127H~@k[4;22H[26;127H   [4;21H[26;140H1[4;21H[?25h[?25l[26;127H~@k[4;21H[26;127H   [4;20H[26;140H0[4;20H[?25h[?25l[26;127H~@k[4;20H[26;127H   [4;19H[26;139H19[4;19H[?25h[?25l[26;127H~@k[4;19H[26;127H   [4;18H[26;140H8[4;18H[?25h[?25l[26;127H~@k[4;18H[26;127H   [4;17H[26;140H7[4;17H[?25h[?25l[26;127H~@k[4;17H[26;127H   [4;16H[26;140H6[4;16H[?25h[?25l[26;127H~@@[4;16H[26;127H   [4;24H[26;139H24[4;24H[?25h[?25l[26;127Ha[4;24H[26;127H [4;25H[26;1H[1m-- В[26;5HС[26;6HТ[26;7HА[26;8HВ[26;9HК[26;10HА[26;11H --[m[26;14H[K[26;137H4,25[9CВ[26;151Hе[26;152Hс[26;153Hь[4;25H[?25h[?25l-[26;140H6[4;26H[?25h[?25lt[26;140H7[4;27H[?25h[?25lw[26;140H8[4;28H[?25h[?25lo[26;140H9[4;29H[?25h[26;1H[K[4;28H[?25l[26;127H^[[4;28H[26;127H  [4;29H[26;137H4,28[9CВ[26;151Hе[26;152Hс[26;153Hь[4;28H[?25h[?25l[26;127H:[4;28H[26;127H[K[26;1H:[?25hwq
+[?25l[?1006;1000l[?1002l[?2004l[>4;m"config/nginx.yaml" 19L, 375B з[26;32Hа[26;33Hп[26;34Hи[26;35Hс[26;36Hа[26;37Hн[26;38Hо[26;1H[23;2t[23;1t
+
+[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:24:12][144D[?1h=[?2004hvi config/nginx.yaml[20Dkubectl apply -f config/[16Dget pods -n codeby[18Dapply -f config/  [16Ddiff -f config  [?1l>[?2004l
+
+]2;sudo kubectl diff -f config]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+diff -u -N /tmp/LIVE-1643627698/apps.v1.Deployment.codeby.nginx-deployment-two /tmp/MERGED-1282960725/apps.v1.Deployment.codeby.nginx-deployment-two
+--- /tmp/LIVE-1643627698/apps.v1.Deployment.codeby.nginx-deployment-two	2023-12-21 00:24:16.330339156 +0300
++++ /tmp/MERGED-1282960725/apps.v1.Deployment.codeby.nginx-deployment-two	2023-12-21 00:24:16.330339156 +0300
+@@ -0,0 +1,42 @@
++apiVersion: apps/v1
++kind: Deployment
++metadata:
++  creationTimestamp: "2023-12-23T21:24:16Z"
++  generation: 1
++  name: nginx-deployment-two
++  namespace: codeby
++  uid: 2af812e5-6c0d-4a46-9918-769654779063
++spec:
++  progressDeadlineSeconds: 600
++  replicas: 2
++  revisionHistoryLimit: 10
++  selector:
++    matchLabels:
++      app: nginx
++  strategy:
++    rollingUpdate:
++      maxSurge: 25%
++      maxUnavailable: 25%
++    type: RollingUpdate
++  template:
++    metadata:
++      creationTimestamp: null
++      labels:
++        app: nginx
++    spec:
++      containers:
++      - image: nginx:1.14.2
++        imagePullPolicy: IfNotPresent
++        name: nginx
++        ports:
++        - containerPort: 80
++          protocol: TCP
++        resources: {}
++        terminationMessagePath: /dev/termination-log
++        terminationMessagePolicy: File
++      dnsPolicy: ClusterFirst
++      restartPolicy: Always
++      schedulerName: default-scheduler
++      securityContext: {}
++      terminationGracePeriodSeconds: 30
++status: {}
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:24:16][144D[?1h=[?2004hkubectl diff -f config[22Dvi config/nginx.yaml  [20Dkubectl apply -f config/[16Dget pods -n codeby[18Dapply -f config/  [?1l>[?2004l
+
+]2;sudo kubectl apply -f config/]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+deployment.apps/nginx-deployment-two created
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:24:22][144D[?1h=[?2004hkubectl apply -f config/[16Ddiff -f config  [22Dvi config/nginx.yaml  [20Dkubectl apply -f config/[16Dget pods -n codeby[?1l>[?2004l
+
+]2;sudo kubectl get pods -n codeby]1;kubectlsudo: unable to resolve host devopsVM: Неизвестное имя или служба
+NAME                                   READY   STATUS    RESTARTS   AGE
+nginx-77b4fdf86c-v8qph                 1/1     Running   0          7h50m
+nginx-deployment-cbdccf466-6r77v       1/1     Running   0          3m15s
+nginx-deployment-cbdccf466-j5tsr       1/1     Running   0          3m15s
+nginx-deployment-two-cbdccf466-hprnl   1/1     Running   0          7s
+nginx-deployment-two-cbdccf466-j5bqp   1/1     Running   0          7s
+nginx-first-7dbfd449f4-jnrqf           1/1     Running   0          39m
+[1m[7m%[27m[1m[0m                                                                                                                                                         
+ 
+]2;logic@devopsVM:~]1;~
+[0m[27m[24m[J[22;36mlogic[22;35m•[22;32m~[00m» [K[135C[0:24:29][144D[?1h=[?2004h[?2004l
+
+
+Script done on 2023-12-21 00:24:43+03:00 [COMMAND_EXIT_CODE="0"]
+
