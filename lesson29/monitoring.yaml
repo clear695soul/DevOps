@@ -1,0 +1,98 @@
+version: '3.3'
+services:
+  prometheus:
+    image: bitnami/prometheus:latest
+    container_name: prometheus
+    platform: linux/amd64
+    ports:
+    - '9090:9090'
+    volumes:
+    - prometheus_data:/opt/bitnami/prometheus/data
+    - './prometheus/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml'
+    networks:
+      - monitornig
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node_exporter
+    platform: linux/arm64
+    command:
+      - '--path.rootfs=/host'
+    pid: host
+    restart: unless-stopped
+    volumes:
+      - '/:/host:ro'
+    ports:
+      - '9103:9100'
+    networks:
+      - monitornig
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.47.1
+    container_name: cadvisor
+    privileged: true
+    volumes:
+      - '/:/rootfs:ro'
+      - '/var/run/docker.sock:/var/run/docker.sock:rw'
+      - '/sys:/sys:ro'
+      - '/var/lib/docker/:/var/lib/docker:ro'
+      - '/dev/disk/:/dev/disk:ro'
+    ports:
+      - '8080:8080'
+    networks:
+      - monitornig
+
+  grafana:
+    image: grafana/grafana-oss
+    container_name: grafana
+    platform: linux/amd64
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    depends_on:
+      - prometheus
+    ports:
+      - 3000:3000
+    networks:
+      - monitornig
+  
+  alertmanager:
+    image: bitnami/alertmanager:latest
+    volumes:
+      - ./alertmanager/config.yml:/opt/bitnami/alertmanager/conf/config.yml
+    ports:
+    - 9093:9093
+    networks:
+      - monitornig
+
+  blackbox-exporter:
+    image: prom/blackbox-exporter:latest
+    volumes:
+      - ./blackbox.yaml:/config/blackbox.yaml
+    command:
+      - '--config.file=/config/blackbox.yaml'
+    restart: unless-stopped
+    ports:
+      - "9115:9115"
+    networks:
+      - monitornig
+
+  # ab:
+  #   image: jordi/ab
+  #   container_name: ab
+  #   command:
+  #     - '-c 50'
+  #     - '-n 1000'
+  #     - 'http://ui:9292/'
+  #   networks:
+  #     - monitornig
+
+volumes:
+  prometheus_data:
+  grafana_data:
+
+networks:
+  monitornig:
