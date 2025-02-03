@@ -1,0 +1,60 @@
+server {
+  listen 80;
+  server_name {{ domain_name }};
+  
+  root /var/www/html;
+}
+# Forward proxy for local network to access Internet
+server {
+   listen 8888;
+    location / {
+        allow 10.129.0.0/24;
+        deny all;
+        resolver 8.8.8.8;
+        proxy_pass http://$http_host$uri$is_args$args;
+    }
+}
+
+{% for item in sub_domains %}
+server {
+  listen {{ item.port }};
+  server_name {{ item.name }}.{{ domain_name }};
+  
+  location / {
+    proxy_pass http://{{ item.ip }}:{{ item.port }};
+    proxy_set_header   Host $host;
+    proxy_set_header   X-Real-IP $remote_addr;
+    proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header        X-Forwarded-Proto $scheme;
+  
+  }
+}
+{% endfor %}
+
+server {
+    if ($host = grafana.bvm.pw) {
+        return 301 https://$host$request_uri;
+    }
+  listen 80;
+  server_name grafana.bvm.pw;
+    return 404;
+}
+
+server {
+    if ($host = prometheus.bvm.pw) {
+        return 301 https://$host$request_uri;
+    }
+  listen 80;
+  server_name prometheus.bvm.pw;
+    return 404;
+}
+
+server {
+    if ($host = alertmanager.bvm.pw) {
+        return 301 https://$host$request_uri;
+    }
+  listen 80;
+  server_name alertmanager.bvm.pw;
+    return 404;
+}
+
