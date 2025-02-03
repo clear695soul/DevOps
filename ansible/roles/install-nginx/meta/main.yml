@@ -1,0 +1,32 @@
+galaxy_info:
+  author: Nickolas Black
+  description: Simple role for nginx installation. For educational purposes only. Do not use for production!!!
+  company: bvmspb
+
+
+  license: MIT
+
+  min_ansible_version: 2.10
+
+
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - 20.04
+
+  # platforms:
+  # - name: Fedora
+  #   versions:
+  #   - all
+  #   - 25
+  # - name: SomePlatform
+  #   versions:
+  #   - all
+  #   - 1.0
+  #   - 7
+  #   - 99.99
+
+  galaxy_tags: []
+
+dependencies: []

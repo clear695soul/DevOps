@@ -1,0 +1,21 @@
+galaxy_info:
+  author: Nickolas Black
+  description: Simple role for Wordpress installation. For educational purposes only. Do not use for production!!!
+  company: bvmspb
+
+
+  license: MIT
+
+  min_ansible_version: 2.10
+
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - 20.04
+
+
+  galaxy_tags: []
+      Maximum 20 tags per role.
+
+dependencies: []
